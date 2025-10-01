@@ -1,0 +1,8 @@
+This is the syntax for running training from another already trained file. 
+
+python train.py --task go2 --sim_device cuda --rl_device cuda --experiment_name test_go2 --run_name run1 --resume --load_run Full_run --checkpoint 1500
+
+To play the trained model 
+
+python play.py --task go2 --sim_device cuda --rl_device cuda --experiment_name test_go2 --run_name run1 --resume --load_run Run19000 --checkpoint 19000
+
